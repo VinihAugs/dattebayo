@@ -1,11 +1,23 @@
 # Shinobi Archives
 
-Enciclopédia interativa inspirada no universo Naruto, com personagens, clãs, vilas, equipes, bijū, Kekkei Genkai, Akatsuki e Kara.
+Enciclopédia interativa do universo Naruto, com personagens, clãs, vilas, equipes, bijū, Kekkei Genkai, Akatsuki e Kara.
 
-[Ver o site](https://shinobi-archives-vini.viniciusaugs.chatgpt.site)
+## Executar localmente
 
-## Rodar localmente
+Requer Python 3 ou outro servidor HTTP estático:
 
-Sirva a pasta `dist` com qualquer servidor HTTP estático. Por exemplo, `python3 -m http.server 8000 --directory dist`, depois acesse `http://localhost:8000`.
+```bash
+python3 -m http.server 8000 --directory dist
+```
 
-Os registros são demonstrativos em `dist/data.js`. `dist/service.js` concentra o acesso aos dados para facilitar a futura integração com uma API REST.
+Acesse [http://localhost:8000](http://localhost:8000).
+
+## Estrutura
+
+- `dist/app.js`: navegação, páginas e interações.
+- `dist/data.js`: registros de exemplo e valores ilustrativos dos atributos.
+- `dist/service.js`: camada de acesso aos dados, preparada para uma futura API REST.
+- `dist/style.css`: layout, responsividade e animações.
+- `dist/hero.jpg`: arte da página inicial.
+
+O site usa dados locais nesta versão. A busca e os filtros funcionam sem serviços externos.
